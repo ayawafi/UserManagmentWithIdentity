@@ -3,9 +3,8 @@
 @{
     ViewData["Title"] = "Roles";
 }
-<h1>
-    Roles
-</h1>
+<h1>Rolee</h1>
+<partial name="_RoleForm" model="new RoleFormViewModel()"></partial>
 <table class="table table-striped mt-4">
     <thead>
         <tr class="bg-primary text-white">
@@ -24,3 +23,7 @@
     </tbody>
 
 </table>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial"></partial>
+}
